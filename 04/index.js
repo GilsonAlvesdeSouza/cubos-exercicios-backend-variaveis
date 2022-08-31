@@ -8,6 +8,6 @@ let taxaFixa = parseFloat(
 );
 let periodo = readlineSync.questionInt("Informe o período de tempo: ");
 
-let montante = capital * Math.pow(1 + taxaFixa, periodo);
+let montante = capital * Math.pow(1 + taxaFixa / 100, periodo);
 
 console.log(`Total do montante é ${montante.toFixed(2)}`);

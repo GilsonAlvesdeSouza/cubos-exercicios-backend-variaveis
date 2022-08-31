@@ -3,9 +3,9 @@ console.log(
   "programa que calcula a taxa de juros que foi operada sobre um financiamento\n"
 );
 
-let montante = readlineSync.question("Informe o Montante: ");
-let capitalInicial = readlineSync.question("Informe o capital inicial: ");
-let meses = readlineSync.question("informe a quantidade de meses: ");
+let montante = readlineSync.questionInt("Informe o Montante: ");
+let capitalInicial = readlineSync.questionInt("Informe o capital inicial: ");
+let meses = readlineSync.questionInt("informe a quantidade de meses: ");
 
 let juros = (
   (Math.pow(montante / capitalInicial, 1 / meses) - 1) *
